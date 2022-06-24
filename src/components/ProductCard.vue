@@ -5,7 +5,7 @@
         <h2 class="is-size-4 has-text-weight-bold">{{ product.name }}</h2>
         <small class="product-date">{{ product.date }}</small>
         <span>{{ product.quantity }}</span>
-        <img v-bind="product.featuredImage" alt="featuredImage" />
+        <img v-bind:src="product.featuredImage" alt="featuredImage" />
       </div>
     </div>
   </div>

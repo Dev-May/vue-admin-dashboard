@@ -24,23 +24,23 @@ export default {
     };
   },
 
-  methods: {
-    async getData() {
-      try {
-        const response = await this.$http.get(
-          "https://fc-ecommerce-test.herokuapp.com/"
-        );
-        // JSON responses are automatically parsed.
-        this.products = response.data;
-      } catch (error) {
-        console.log(error);
-      }
-    },
-  },
+  // methods: {
+  //   async getData() {
+  //     try {
+  //       const response = await this.$http.get(
+  //         "https://fc-ecommerce-test.herokuapp.com/"
+  //       );
+  //       // JSON responses are automatically parsed.
+  //       this.products = response.data;
+  //     } catch (error) {
+  //       console.log(error);
+  //     }
+  //   },
+  // },
 
-  created() {
-    this.getData();
-  },
+  // created() {
+  //   this.getData();
+  // },
 };
 </script>
 
